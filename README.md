@@ -21,5 +21,17 @@ npm start
 
 # Functionalities
 Query parameters play a huge role here to query to server to get the desire data. 
-1. Search by object properties.
-Originallly there 300 objects in the array as in the picture below.
+## 1. Search by object properties.
+Initially, there 300 objects in the array as in the picture below.</br>
+Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars
+
+[img]
+
+When you apply query parameters, you will get more specific results that match your desire. For instance, if you want all cars with the brand Toyota, simply append the query parameters and the end of the URL like this.</br>
+Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota </br>
+[img]
+'?car_brand_name=toyota' is the extended part that narrows down the result to only Toyota cars. Of course, it is also legal to have more than one conditions. Simply connect them by the ampersand sign </br>
+Corresponding URL: 
+
+
+
