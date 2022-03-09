@@ -5,13 +5,17 @@ const capitalize = function (word) {
 };
 
 const getAllCars = async (req, res) => {
-  const { car_brand_name, car_model, sort, fields, numericFilter } = req.query;
+  const { car_brand_name, car_model, sort, fields, numericFilter, car_color } =
+    req.query;
   const queryObject = {};
   if (car_brand_name) {
     queryObject.car_brand_name = capitalize(car_brand_name);
   }
   if (car_model) {
     queryObject.car_model = capitalize(car_model);
+  }
+  if (car_color) {
+    queryObject.car_color = capitalize(car_color);
   }
   if (numericFilter) {
     const operatorMap = {
@@ -26,7 +30,7 @@ const getAllCars = async (req, res) => {
       regEx,
       (match) => `-${operatorMap[match]}-`
     );
-    const options = ["price", "car_model_yar"];
+    const options = ["price", "car_model_year"];
     filters = filters.split(",").forEach((item) => {
       //how each item looks like.
       //price-$gt-40
