@@ -20,7 +20,7 @@ app.use("/api/v1/cars", carsRouter);
 app.use(errorHandle);
 app.use(notFound);
 
-const port = process.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const start = async () => {
   try {
