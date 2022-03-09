@@ -29,9 +29,14 @@ Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars
 
 When you apply query parameters, you will get more specific results that match your desire. For instance, if you want all cars with the brand Toyota, simply append the query parameters and the end of the URL like this.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota </br>
+
 [img]
-'?car_brand_name=toyota' is the extended part that narrows down the result to only Toyota cars. Of course, it is also legal to have more than one conditions. Simply connect them by the ampersand sign </br>
-Corresponding URL: 
+
+'?car_brand_name=toyota' is the extended part that narrows down the result to only Toyota cars. 
+
+Of course, it is also legal to have more than one conditions. Simply connect them by the ampersand sign. </br>
+If you are a fan of a red Toyota, you will like this.
+Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota&car_color=red
 
 
 
