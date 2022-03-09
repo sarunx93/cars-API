@@ -38,5 +38,5 @@ Of course, it is also legal to have more than one conditions. Simply connect the
 If you are a fan of a red Toyota, you will like this.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota&car_color=red
 
-
+## 2. Numeric Filters
 
