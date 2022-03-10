@@ -20,29 +20,34 @@ npm start
 # Functionalities
 Query parameters play a huge role here to query to server to get the desire data. 
 ## 1. Search by object properties.
-Initially, there 300 objects in the array as in the picture below.</br>
+Initially, there are 300 objects in the array as in the picture below.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars
 
-<img src="https://github.com/sarunx93/cars-API/blob/main/images/search_toyota.png"/>
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/initial_data.png"/>
+
 
 When you apply query parameters, you will get more specific results that match your desire. For instance, if you want all cars with the brand Toyota, simply append the query parameters and the end of the URL like this.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota </br>
 
-[img]
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/search_toyota.png"/>
 
-'?car_brand_name=toyota' is the extended part that narrows down the result to only Toyota cars. 
+As a result, there are 21 toyota cars in this API.
 
 Of course, it is also legal to have more than one conditions. Simply connect them by the ampersand sign. </br>
 If you are a fan of a red Toyota, you will like this.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota&car_color=red
 
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/red_toyora.png"/>
+
 ## 2. Numeric Filters
 Supposingly, you want to see a specific price range from $7000 - $8000, you can do so by adding 'numericFilter' query parameter.
 Corresponding URL : https://random-cars-api.herokuapp.com/api/v1/cars?numericFilter=price%3E=7000,price%3C=8000
 
-[img]
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/price_range.png"/>
 
 ## 3. Selecting Specific Properties
-If you are keen to work with only a few properties and want to omit the others, simply add 'fields' query parameter as in the URL below.
-Corresponding URL : https://random-cars-api.herokuapp.com/api/v1/cars?fields=car_brand_name,price
+If you are keen to work with only a few properties and want to omit the others, simply add 'fields' query parameter as in the URL below. Let's try filtering only the brand name and the price
+Corresponding URL : https://random-cars-api.herokuapp.com/api/v1/cars?fields=car_brand_name,price 
+
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/select_name_price.png"/>
 
