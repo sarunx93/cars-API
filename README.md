@@ -23,7 +23,7 @@ Query parameters play a huge role here to query to server to get the desire data
 Initially, there 300 objects in the array as in the picture below.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars
 
-[img]
+<img src="https://github.com/sarunx93/cars-API/blob/main/images/search_toyota.png"/>
 
 When you apply query parameters, you will get more specific results that match your desire. For instance, if you want all cars with the brand Toyota, simply append the query parameters and the end of the URL like this.</br>
 Corresponding URL: https://random-cars-api.herokuapp.com/api/v1/cars?car_brand_name=toyota </br>
